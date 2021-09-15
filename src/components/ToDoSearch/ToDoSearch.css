@@ -1,0 +1,28 @@
+.ToDoSearch {
+    background: #F9FBFC;
+    border-radius: 7px;
+    border: 2px solid rgba(70, 48, 131, 1);
+    margin: 0 24px;
+    height: 64px;
+    width: calc(100% - 62px);
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: #1E1E1F;
+    box-shadow: 0px 5px 50px rgba(70, 48, 131, 0.25);
+  }
+  
+  .ToDoSearch::placeholder {
+    color: #A5A5A5;
+    font-family: 'Montserrat';
+    font-weight: 400;
+  }
+  
+  .ToDoSearch:focus {
+    border: 2px solid rgb(98, 71, 172);
+    outline: none;
+    box-shadow: 0 0 0 1pt rgba(140, 105, 238, 0.7);
+    transition: .2s;
+  }
+  

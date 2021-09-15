@@ -1,0 +1,79 @@
+.ToDoItem_Skeleton {
+    background-color: #fafafa8f;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-radius: 7px;
+    align-items: center;
+    margin-top: 24px;
+	opacity: 0.8;
+    box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.55);
+}
+
+.ToDoItem_Skeleton2 {
+	opacity: 0.5;
+}
+
+.ToDoItem_Skeleton3 {
+	opacity: 0.2;
+}
+
+.ToDoItem_Skeleton p {
+	background:rgba(108, 108, 109, 0.25);
+	border-radius: 4px;
+	margin: 24px 2px 24px 34px;
+	padding: 14px 14px 14px 14px;
+    width: calc(100% - 160px);
+    font-size: 18px;
+}
+
+.Icon_Skeleton {
+	border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 48px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.Icon-check_Skeleton {
+	background-color: rgba(170, 170, 170, 0.6);
+	height: 34px;
+    width: 34px;
+    display: block;
+    position: absolute;
+    left: 22px;
+}
+
+.Icon-delete_Skeleton {
+    content: url('../../resources/icons/delete.png');
+    position: absolute;
+    height: 19px;
+    width: 19px;
+    top: 4px;
+    right: 7px;
+    transition: 2s content;
+	filter: opacity(0.5);
+  }
+
+.ToDoItem_Skeleton,
+.Icon-check_Skeleton,
+.Icon-delete_Skeleton {
+	background: linear-gradient(90deg, rgba(250,250,250,1), rgb(200, 199, 199));
+	background-size: 400% 400%;
+	animation: loadingAnimation 2s ease-in-out infinite;
+}
+
+@keyframes loadingAnimation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
