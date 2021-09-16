@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ToDo-Machine/static/css/main.b92fd6fb.chunk.css",
+    "main.js": "/ToDo-Machine/static/js/main.710a67bd.chunk.js",
+    "main.js.map": "/ToDo-Machine/static/js/main.710a67bd.chunk.js.map",
+    "runtime-main.js": "/ToDo-Machine/static/js/runtime-main.0cb23b8a.js",
+    "runtime-main.js.map": "/ToDo-Machine/static/js/runtime-main.0cb23b8a.js.map",
+    "static/js/2.c415986b.chunk.js": "/ToDo-Machine/static/js/2.c415986b.chunk.js",
+    "static/js/2.c415986b.chunk.js.map": "/ToDo-Machine/static/js/2.c415986b.chunk.js.map",
+    "index.html": "/ToDo-Machine/index.html",
+    "static/css/main.b92fd6fb.chunk.css.map": "/ToDo-Machine/static/css/main.b92fd6fb.chunk.css.map",
+    "static/js/2.c415986b.chunk.js.LICENSE.txt": "/ToDo-Machine/static/js/2.c415986b.chunk.js.LICENSE.txt",
+    "static/media/cheque.1b7256e8.svg": "/ToDo-Machine/static/media/cheque.1b7256e8.svg",
+    "static/media/ToDoLoading.css": "/ToDo-Machine/static/media/delete.8bcc0439.png",
+    "static/media/delete.9137dae7.svg": "/ToDo-Machine/static/media/delete.9137dae7.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0cb23b8a.js",
+    "static/js/2.c415986b.chunk.js",
+    "static/css/main.b92fd6fb.chunk.css",
+    "static/js/main.710a67bd.chunk.js"
+  ]
+}
