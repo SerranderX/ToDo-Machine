@@ -29,7 +29,6 @@ function ToDoProvider(props) {
     }
 
     const completeTodos = (id) => {
-        console.log(id);
         const todoIndex = todos.findIndex( todo =>  todo.id === id );
         const todosMemory = [...todos];
         todosMemory[todoIndex].complete = (todosMemory[todoIndex].complete) ? false : true ;

@@ -2,7 +2,6 @@ import React from "react";
 import { ToDoIcon } from ".";
 
 function CompleteIcon({ completed, onComplete }) {
-    console.log(onComplete);
 
     return (
         <ToDoIcon 
