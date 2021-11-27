@@ -16,8 +16,10 @@ function ToDoForm(){
 
     const añadirToDo = (event) => {
         event.preventDefault();
-        addToDos(textTodoVal);
-        setOpenModal(false);
+        if(textTodoVal){
+            addToDos(textTodoVal);
+            setOpenModal(false);
+        }
     }
 
     const onChangeTextToDoVal = (event) => {

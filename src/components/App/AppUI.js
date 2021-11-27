@@ -11,6 +11,7 @@ import { Footer } from "../Footer"
 import { ToDoLoading } from "../ToDoLoading";
 import { TodosError } from "../ToDoError";
 import { ToDoEmpty } from "../ToDoEmpty";
+import { ToDoHeader } from "../ToDoHeader";
 
 function AppUI() {
   const {
@@ -22,19 +23,32 @@ function AppUI() {
     openModal,
     setOpenModal,
     developTag,
+    totalTodos, 
+    completedTodos,
+    searchValue, 
+    setSearchValue
   } = React.useContext(ToDoContext);
 
   return (
     <React.Fragment>
-      <ToDoCounter />
-      <ToDoSearch />
+      <ToDoHeader>
+        <ToDoCounter
+          totalTodos={totalTodos}
+          completedTodos={completedTodos}
+        />
+        <ToDoSearch 
+          searchValue={searchValue}
+          setSearchValue={setSearchValue}
+        />
+      </ToDoHeader>
+
       <ToDoList>
         {error && <TodosError/> }
         {loading && <ToDoLoading />}
         {!loading && !searchedTodos.length && <ToDoEmpty />}
 
         {searchedTodos.map(todo => (
-          <ToDoItem
+          <ToDoItem 
             key={todo.id.toString()}
             text={todo.text}
             completed={todo.complete}
