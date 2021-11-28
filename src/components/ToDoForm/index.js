@@ -1,14 +1,11 @@
 import React from 'react';
 import './ToDoForm.css';
-import { ToDoContext } from '../ToDoContext';
 
-function ToDoForm(){
-    const [textTodoVal, setTextTodoVal] = React.useState('');
-
-    const {
+function ToDoForm({
         addToDos,
         setOpenModal
-    } = React.useContext(ToDoContext);
+    }){
+    const [textTodoVal, setTextTodoVal] = React.useState('');
 
     const onCancel = () => {
         setOpenModal(false);
@@ -27,14 +24,14 @@ function ToDoForm(){
     }
 
     return (
-        <form class="form-box" onSubmit={añadirToDo}>
+        <form className="form-box" onSubmit={añadirToDo}>
             <h2>Escribe tu nuevo ToDo</h2>
             <textarea 
             value={textTodoVal}
             onChange={onChangeTextToDoVal}
             placeholder="Nombre de la tarea a realizar"></textarea>
-            <div class="form-box_div">
-                <button type="button" class="cancel-btn" onClick={onCancel}>
+            <div className="form-box_div">
+                <button type="button" className="cancel-btn" onClick={onCancel}>
                     <span></span>
                     <span></span>
                     <span></span>
@@ -42,7 +39,7 @@ function ToDoForm(){
                     Cancelar
                 </button>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <button type="submit" class="submit-btn">
+                <button type="submit" className="submit-btn">
                     <span></span>
                     <span></span>
                     <span></span>

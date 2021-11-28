@@ -1,10 +1,9 @@
 import React from 'react';
 import { useLocalStorage } from './useLocalStorage';
 
-const ToDoContext = React.createContext();
 const developTag = '{ Powered by: SerranderX }';
 
-function ToDoProvider(props) {
+function useToDos() {
     const {item: todos,
         saveItem: saveTodos,
         loading,
@@ -53,8 +52,7 @@ function ToDoProvider(props) {
         saveTodos(todosMemory);
     };
 
-    return (
-        <ToDoContext.Provider value={{
+    return {
             error,
             loading,
             completedTodos,
@@ -68,10 +66,7 @@ function ToDoProvider(props) {
             addToDos,
             setOpenModal,
             developTag,
-        }}>
-            {props.children}
-        </ToDoContext.Provider>
-    );
+        }
 }
 
-export {ToDoContext, ToDoProvider};
+export { useToDos };

@@ -25,4 +25,12 @@
     box-shadow: 0 0 0 1pt rgba(140, 105, 238, 0.7);
     transition: .2s;
   }
+
+  .ToDoSearch:disabled {
+    color: #a5a5a5c0;
+    font-size: 24px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    opacity:75%
+  }
   

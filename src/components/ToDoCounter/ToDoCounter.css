@@ -5,4 +5,9 @@
     margin: 0;
     padding: 48px;
   }
+
+.ToDoCounter--loading {
+  opacity: 75%;
+  font-size: 28px;
+}
   
