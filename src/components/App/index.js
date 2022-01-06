@@ -13,7 +13,7 @@ import { ToDoEmpty } from "../ToDoEmpty";
 import { ToDoHeader } from "../ToDoHeader";
 import { useToDos } from "./useToDos";
 import { ToDoEmptySearch } from '../ToDoEmptySearch';
-
+import { ChangeAlert } from "../ChangeStorageAlert"
 
 
 function App() {
@@ -31,6 +31,7 @@ function App() {
     searchValue, 
     setSearchValue,
     addToDos,
+    sincronizeTodos
   } = useToDos();
 
   return (
@@ -81,6 +82,7 @@ function App() {
         <Modal>
           <ToDoForm 
             addToDos={addToDos}
+            openModal={openModal}
             setOpenModal={setOpenModal}
           />
         </Modal>
@@ -91,6 +93,10 @@ function App() {
         openModal={openModal}
       />
       <Footer developTag={developTag}/>
+
+      <ChangeAlert 
+        sincronize={sincronizeTodos}
+      />
     </React.Fragment>
   );
 }
